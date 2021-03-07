@@ -1,7 +1,8 @@
 import React, { useState,useReducer } from "react";
 import "./../styles/App.css";
+import State from "./State";
 
-
+import Towns from "./Towns";
 const states = [{
 	name : "Madhya Pradesh",
 	description:"Madhya Pradesh, a large state in central India, retains landmarks from eras throughout Indian history.",
@@ -143,7 +144,9 @@ function App()
 	// Do not alter/remove main div
 	return (
 	<div id="main">
+		<State value1={states}/>
 		
+		<Towns/>
 	</div>
 	);
 }
